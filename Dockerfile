@@ -9,4 +9,6 @@ RUN curl -L -o prequeldev https://storage.googleapis.com/prequel_binaries/preque
 
 COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/usr/local/bin/prequeldev"]
+RUN chmod 777 entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
