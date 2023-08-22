@@ -15,7 +15,6 @@ inputs:
     description: "Can only be 'import' or 'export'"
     required: false
     default: 'export'
-outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
