@@ -16,6 +16,10 @@ This action currently validates models. When the Prequel Github action is deprec
 
 either import or export, **Default**: export
 
+## `dir`
+
+Filepath or glob matching model configs to upsert, **Default**: prequel/models/*
+
 
 ## Example usage
 
@@ -26,4 +30,6 @@ with:
   host: https://api.prequel.co/
   api_key: ${{ secrets.PREQUEL_API_KEY }}
   mode: export
+  dir: exports/models/*.json
 ```
+
