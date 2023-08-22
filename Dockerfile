@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM debian:bookworm-slim
+FROM ubuntu
 
 RUN apt update && apt install -y curl
 
