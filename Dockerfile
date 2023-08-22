@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM debian:bookworm-slim
 
-RUN apt update && apt install -y curl sudo
+RUN apt update && apt install -y curl sudo wget
 
 COPY entrypoint.sh /entrypoint.sh
 
