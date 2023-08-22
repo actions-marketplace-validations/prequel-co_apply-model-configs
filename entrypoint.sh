@@ -13,4 +13,4 @@ fi
 chmod +x /tmp/install.sh
 /tmp/install.sh
 
-prequel --host="$2" --api_key="$3" --mode="$4" model apply $5
+prequel --host="$2" --api_key="$3" --mode="$4" model apply "$5"
