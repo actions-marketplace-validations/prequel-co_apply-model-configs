@@ -19,7 +19,9 @@ inputs:
     description: "Directory containing Prequel model configs. Can be a glob"
     required: false
     default: 'prequel/models/*'
-
+branding:
+  icon: 'upload-cloud'
+  color: 'green'
 runs:
   using: 'docker'
   image: 'Dockerfile'
