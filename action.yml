@@ -15,8 +15,17 @@ inputs:
     description: "Can only be 'import' or 'export'"
     required: false
     default: 'export'
+  dir:  
+    description: "Directory containing Prequel model configs. Can be a glob"
+    required: false
+    default: 'prequel/models/*'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.use_dev_cli }}
+    - ${{ inputs.host }}
+    - ${{ inputs.api_key }}
+    - ${{ inputs.mode }}
+    - ${{ inputs.dir }}
